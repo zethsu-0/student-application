@@ -7,13 +7,13 @@
         Dim toPrint
 
         If RadioButton1.Checked Then
-            sizes = "small"
+            sizes = "small" & vbCrLf '<-for new line
         End If
         If RadioButton2.Checked Then
-            sizes = "Medium"
+            sizes = "Medium" & vbCrLf
         End If
         If RadioButton3.Checked Then
-            sizes = "Large"
+            sizes = "Large" & vbCrLf
         End If
 
 
@@ -30,7 +30,7 @@
             need &= CheckBox3.Text & vbCrLf
         End If
 
-        toPrint = TextBox1.Text & vbCrLf & TextBox2.Text & vbCrLf & sizes & vbCrLf & need & ListBox1.SelectedItem
+        toPrint = "Your Information: " & vbCrLf & vbCrLf & "Student ID: " & TextBox1.Text & vbCrLf & "NAME: " & TextBox2.Text & vbCrLf & sizes & need & ListBox1.SelectedItem
 
         MessageBox.Show(toPrint)
     End Sub
@@ -44,10 +44,8 @@
 
         End If
         If ComboBox1.Text = "COENG" Then
-            ListBox1.Items.Add("5")
-            ListBox1.Items.Add("6")
-            ListBox1.Items.Add("77")
-            ListBox1.Items.Add("88")
+            ListBox1.Items.Add("Civil Engineering")
+            ListBox1.Items.Add("Computer Engineering")
 
         End If
         If ComboBox1.Text = "COE" Then
@@ -59,4 +57,9 @@
     End Sub
 
 
+    Private Sub TextBox2KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox2.KeyPress
+        If Char.IsDigit(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) AndAlso e.KeyChar <> "."c Then
+            e.Handled = True
+        End If
+    End Sub
 End Class
