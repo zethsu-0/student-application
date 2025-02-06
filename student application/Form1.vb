@@ -7,7 +7,7 @@
         Dim toPrint
 
         If RadioButton1.Checked Then
-            sizes = "small" & vbCrLf '<-for new line
+            sizes = "small" & vbCrLf
         End If
         If RadioButton2.Checked Then
             sizes = "Medium" & vbCrLf
@@ -30,7 +30,7 @@
             need &= CheckBox3.Text & vbCrLf
         End If
 
-        toPrint = "Your Information: " & vbCrLf & vbCrLf & "Student ID: " & TextBox1.Text & vbCrLf & "NAME: " & TextBox2.Text & vbCrLf & sizes & need & ListBox1.SelectedItem
+        toPrint = "YOUR INFORMATION: " & vbCrLf & vbCrLf & "Student ID: " & TextBox1.Text & vbCrLf & "NAME: " & TextBox2.Text & vbCrLf & vbCrLf & sizes & vbCrLf & need & vbCrLf & ListBox1.SelectedItem
 
         MessageBox.Show(toPrint)
     End Sub

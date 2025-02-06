@@ -70,8 +70,9 @@ Partial Class Form1
         '
         'TextBox1
         '
-        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(92, Byte), Integer))
         Me.TextBox1.Font = New System.Drawing.Font("Times New Roman", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.ForeColor = System.Drawing.Color.White
         Me.TextBox1.Location = New System.Drawing.Point(191, 85)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.MaxLength = 15
@@ -81,8 +82,9 @@ Partial Class Form1
         '
         'TextBox2
         '
-        Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(81, Byte), Integer), CType(CType(92, Byte), Integer))
         Me.TextBox2.Font = New System.Drawing.Font("Times New Roman", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.ForeColor = System.Drawing.Color.White
         Me.TextBox2.Location = New System.Drawing.Point(192, 133)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox2.MaxLength = 50
@@ -203,9 +205,9 @@ Partial Class Form1
         Me.Label3.Location = New System.Drawing.Point(23, 425)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(92, 22)
+        Me.Label3.Size = New System.Drawing.Size(83, 22)
         Me.Label3.TabIndex = 8
-        Me.Label3.Text = "Programe"
+        Me.Label3.Text = "Program"
         '
         'ListBox1
         '
